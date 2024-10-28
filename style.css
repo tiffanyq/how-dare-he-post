@@ -3,8 +3,6 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   margin: 0;
 }
 
@@ -21,6 +19,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-bottom: 48px;
 }
 
 #photo-app-title{
@@ -122,7 +121,7 @@ input[type=checkbox] {
 }
 
 .warning-button {
-  width: 90px;
+  width: 100px;
   font-size: 14px;
   padding: 1em 1.6em;
   border-radius: 8px;
