@@ -1,0 +1,203 @@
+html {
+  touch-action: manipulation;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  height: 100vh;
+}
+
+#body-container {
+  z-index: 2;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#photo-app-title{
+  font-size: 16px;
+  color: #282828;
+  z-index: 3;
+  margin-top: 12px;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#warning-dialog, .warning-button {
+  font-family: "Inter", sans-serif;
+}
+
+#dismiss {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+input[type=checkbox] { 
+  vertical-align: middle; 
+  position: relative; 
+  bottom: 1px; 
+} 
+
+#dismiss-button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  margin-right: 36px;
+  font-size: 12px;
+
+}
+
+.inner-button-tray {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stories img {
+  height: 100px;
+}
+
+#you:hover, #him:hover {
+  cursor: pointer;
+}
+
+#continue-question-mark {
+  margin-top: 36px;
+  display: none;
+}
+
+#warning {
+  background-color: #cc3300;
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+  width: 260px;
+  bottom: 16px;
+  left: -52px;
+  height: 148px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 16px;
+}
+
+#warning-title {
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+#learn-more {
+  font-size: 12px;
+  font-weight: 700;
+  right: 12px;
+  border-radius: 16px;
+  border: 0;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #282828;
+  text-decoration: none;
+}
+
+#warning-container {
+  width: 260px;
+  height: 112px;
+  left: 12px;
+}
+
+.warning-button {
+  width: 90px;
+  font-size: 14px;
+  padding: 1em 1.6em;
+  border-radius: 8px;
+  border: 2px solid #282828;
+  text-decoration: none;
+  text-align: center;
+  }
+
+#dont-do-it {
+  background-color: white;
+  color: #282828;
+  margin-right: 12px;
+} 
+
+#do-it-anyway {
+  background-color: #282828;
+  color: white;
+}
+
+/* animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtle {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInFromRight {
+	0% {
+    transform: translateX(-1%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-zero, .fade-one, .fade-two, .fade-three, .fade-four {
+	animation: 0.6s ease-out 0s 1 slideFadeInFromRight;
+	animation-fill-mode: both;
+}
+
+.fade-static-zero, .fade-static-one, .fade-static-two, .fade-static-three, .fade-static-four {
+  animation: 0.6s ease-out 0s 1 fadeIn;
+  animation-fill-mode: both;
+}
+
+.fade-static-subtle-zero, .fade-static-subtle-one, .fade-static-subtle-two, .fade-static-subtle-three, .fade-static-subtle-four {
+  animation: 1s ease-out 0s 1 fadeInSubtle;
+  animation-fill-mode: both;
+}
+
+.fade-one, .fade-static-one {
+	animation-delay: 0.2s;
+}
+
+.fade-two, .fade-static-two {
+	animation-delay: 0.4s;
+}
+
+.fade-three, .fade-static-three {
+	animation-delay: 0.6s;
+}
+
+.fade-four, .fade-static-four {
+	animation-delay: 0.8s;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>how dare he post</title>
+    <meta property="og:title" content="how dare he post">
+    <meta property="og:description" content="right?">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙂</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="body-container">
+        <div id="photo-app-title" class="playfair-display"> Photo and video sharing social network</div>
+        <div id="stories" class="inner-button-tray">
+          <a href="https://tiffanyq.github.io/hope-he-sees-this/"><img src="you.png" id="you" class="fade-static-zero"/></a>
+          <img class="fade-static-one" src="him.png" id="him"/>
+          <img class="fade-static-two" src="friend.png" id="friend"/>
+          <img class="fade-static-three" src="brand.png" id="brand"/>
+        </div>
+        <div id="continue-question-mark">
+          <div id="warning">
+            <div id="warning-container">
+                <div id="warning-title" class="fade-static-zero">Confirm to continue</div>
+                <div id="warning-body" class="fade-static-one">As your photo and video sharing social network and close friend, we care about you.
+                  <br/><br/>Are you sure?</div>
+                <span class="inner-button-tray fade-static-two">
+                    <span id="dismiss"><input id="check" type="checkbox"><button id="dismiss-button">Don't show again</button></span>
+                  <a href="https://www.instagram.com/anotherbrowsertab" target="_blank" id="learn-more">Learn more</a>
+                </span>
+            </div>
+          </div>
+          <span class="inner-button-tray fade-static-three">
+              <a href = "https://tiffanyq.github.io/hes-just-some-guy/" id="dont-do-it" class="warning-button">Don't do it</a>
+              <a href = "https://tiffanyq.github.io/hes-just-some-guy/" id="do-it-anyway" class="warning-button">Do it anyway</a>
+          </span>
+        </div>
+    </div>
+    <script>
+      function showConfirmDialogue() {
+        const cont = document.getElementById("continue-question-mark");
+        cont.style.display = "block";
+      }
+     window.addEventListener("load", function(event) {
+        const him = document.getElementById("him");
+        him.addEventListener("click", showConfirmDialogue, false);
+    });
+    </script>
+  </body>
+</html>
