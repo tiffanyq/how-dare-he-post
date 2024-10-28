@@ -44,6 +44,7 @@ body {
 #dismiss {
   display: inline-block;
   vertical-align: text-top;
+  margin-left: -6px;
 }
 
 input[type=checkbox] { 
@@ -57,7 +58,7 @@ input[type=checkbox] {
   color: #ffffff;
   border: none;
   font-size: 12px;
-
+  margin-left: -4px;
 }
 
 .inner-button-tray {
