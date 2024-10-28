@@ -56,7 +56,6 @@ input[type=checkbox] {
   background: none;
   color: #ffffff;
   border: none;
-  margin-right: 36px;
   font-size: 12px;
 
 }
@@ -64,7 +63,7 @@ input[type=checkbox] {
 .inner-button-tray {
   margin-top: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -85,7 +84,7 @@ input[type=checkbox] {
   background-color: #cc3300;
   font-family: Inter, sans-serif;
   color: #ffffff;
-  width: 260px;
+  width: 280px;
   bottom: 16px;
   left: -52px;
   height: 148px;
@@ -111,10 +110,12 @@ input[type=checkbox] {
   background-color: #ffffff;
   color: #282828;
   text-decoration: none;
+  width: 72px;
+  text-align: center;
 }
 
 #warning-container {
-  width: 260px;
+  width: 280px;
   height: 112px;
   left: 12px;
 }
